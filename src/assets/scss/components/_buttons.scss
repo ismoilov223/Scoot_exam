@@ -15,7 +15,7 @@
   transition: all 0.3s;
 }
 .get-link:hover {
-  background-color: $clr-white;
+  background-color: transparent;
   color: $clr-yellow;
 }
 .learn-link {
@@ -37,6 +37,6 @@
   transition: all 0.3s;
 }
 .learn-link:hover {
-  background-color: $clr-white;
+  background-color: transparent;
   color: $clr-yellow;
 }

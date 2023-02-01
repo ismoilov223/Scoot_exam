@@ -14,6 +14,10 @@
   margin-right: auto;
 }
 
+.clr-dim-gray {
+  color: #939CAA;
+}
+
 .rotate-me {
   animation: rotating 1s linear infinite;
 }
@@ -41,6 +45,54 @@ body {
 body {
   font-size: 62.5%;
   font-family: Space Mono;
+}
+
+.footer {
+  background-color: #333A44;
+  bottom: 0;
+}
+
+.bot-nav {
+  display: flex;
+  padding: 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bot-nav .icons-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.bot-nav .icons-box .fot-icon:hover path {
+  fill: #E5ECF4;
+}
+.bot-nav .logo-and-nav-box {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+.bot-nav .logo-and-nav-box .hed-nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+.bot-nav .logo-and-nav-box .hed-nav-list-item-link {
+  font-family: Space Mono;
+  font-size: 1.5em;
+  color: #939CAA;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.bot-nav .logo-and-nav-box .hed-nav-list-item-link:hover {
+  color: #FCB72B;
 }
 
 .header {
@@ -100,6 +152,7 @@ body {
   font-style: normal;
   text-align: left;
   line-height: 48px;
+  margin: 0;
 }
 .sign-up-max .sign-up-box-right {
   width: 50%;
@@ -153,7 +206,7 @@ body {
 }
 
 .get-link:hover {
-  background-color: #Ffffff;
+  background-color: transparent;
   color: #FCB72B;
 }
 
@@ -175,7 +228,7 @@ body {
 }
 
 .learn-link:hover {
-  background-color: #Ffffff;
+  background-color: transparent;
   color: #FCB72B;
 }
 
