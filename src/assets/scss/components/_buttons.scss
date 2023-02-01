@@ -18,3 +18,25 @@
   background-color: $clr-white;
   color: $clr-yellow;
 }
+.learn-link {
+  @include font-style(
+    $family: $first-font,
+    $size: 1.5em,
+    $color: $clr-white,
+    $weight: 700,
+    $style: normal,
+    $align: left
+  );
+  width: 180px;
+  display: inline-block;
+  text-align: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  background-color: $clr-yellow;
+  border: 3px solid $clr-yellow;
+  transition: all 0.3s;
+}
+.learn-link:hover {
+  background-color: $clr-white;
+  color: $clr-yellow;
+}
