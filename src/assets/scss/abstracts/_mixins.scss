@@ -1,0 +1,11 @@
+// SCSS Mixins
+
+// Fonts
+@mixin font-style($family, $size, $color, $weight: 400, $style: normal, $align: left) {
+	font-family: $family;
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+	font-style: $style;
+	text-align: $align;
+}

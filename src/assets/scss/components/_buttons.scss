@@ -1,0 +1,20 @@
+// Buttons
+.get-link {
+  @include font-style(
+    $family: $first-font,
+    $size: 1.5em,
+    $color: $clr-white,
+    $weight: 700,
+    $style: normal,
+    $align: left
+  );
+  padding: 14px 39px;
+  text-decoration: none;
+  background-color: $clr-yellow;
+  border: 3px solid $clr-yellow;
+  transition: all 0.3s;
+}
+.get-link:hover {
+  background-color: $clr-white;
+  color: $clr-yellow;
+}

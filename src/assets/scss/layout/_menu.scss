@@ -1,0 +1,40 @@
+// Menu styling
+.header {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  .logo-and-nav-box {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    .hed-nav-list {
+      display: flex;
+      list-style: none;
+      gap: 40px;
+      &-item {
+        &-link {
+          @include font-style(
+            $family: $first-font,
+            $size: 1.5em,
+            $color: $clr-dim-gray,
+            $weight: 700,
+            $style: normal,
+            $align: left
+          );
+          text-decoration: none;
+          transition: all 0.3s;
+        }
+        &-link:hover {
+          color: $clr-yellow;
+        }
+      }
+    }
+  }
+}
