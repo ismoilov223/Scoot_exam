@@ -38,3 +38,14 @@
     }
   }
 }
+@media (max-width:375px){
+    .hed-nav{
+      display: none;
+    }
+    .nav-get-link{
+      display: none;
+    }
+    .top-nav{
+      justify-content: center;
+    }
+}

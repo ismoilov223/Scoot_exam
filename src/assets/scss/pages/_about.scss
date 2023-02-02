@@ -1,0 +1,131 @@
+// Specific style for contact page
+.info-max-about {
+  padding-top: 120px;
+  padding-bottom: 78px !important;
+}
+.about-info-bg-img-one {
+  background-image: url("../images/png/about-page-info-img-one.png");
+}
+.about-info-bg-img-two {
+  background-image: url("../images/png/about-page-info-img-two.png");
+}
+.about-info-bg-img-one::before {
+  content: "";
+  width: 734px;
+  height: 445px;
+  background: url("../images/svg/about-page-info-arrow-one.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 286px;
+  right: -165px;
+}
+.about-info-bg-img-one::after {
+  content: "";
+  width: 445px;
+  height: 445px;
+  background: url("../images/svg/primary-rounded.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: -509px;
+  z-index: -1;
+}
+.about-info-bg-img-two::before {
+  content: "";
+  width: 734px;
+  height: 445px;
+  background: url("../images/svg/about-page-info-arrow-two.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: -176px;
+}
+.about-info-bg-img-two::after {
+  content: "";
+  width: 445px;
+  height: 445px;
+  background: url("../images/svg/primary-rounded.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: -509px;
+  z-index: -1;
+}
+.our-values-max {
+  text-align: center;
+  // padding-top: 78px;
+  padding-bottom: 60px;
+  .our-values-title {
+    @include font-style(
+      $family: $first-font,
+      $size: 4.8em,
+      $color: $clr-dark-navy,
+      $weight: 700,
+      $style: normal,
+      $align: center
+    );
+    margin: 0;
+    margin-bottom: 103px;
+    line-height: 25px;
+  }
+  .ourval-card-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .our-values-card-bg-img-box {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .our-val-bg-img-box-one {
+      background-image: url("../images/png/about-our-bg-img-one.png");
+    }
+    .our-val-bg-img-box-two {
+      background-image: url("../images/png/about-our-bg-img-two.png");
+    }
+    .our-val-bg-img-box-three {
+      background-image: url("../images/png/about-our-bg-img-three.png");
+    }
+    .our-values-card {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 87px;
+      position: relative;
+      .our-value-card-title{
+        @include font-style(
+          $family: $first-font,
+          $size: 2.4em,
+          $color: $clr-dark-navy,
+          $weight: 700,
+          $style: normal,
+          $align: center
+        );
+        line-height: 24px;
+      }
+      .our-value-card-text{
+        @include font-style(
+          $family: $second-font,
+          $size: 1.5em,
+          $color: $clr-dark-navy,
+          $weight: 400,
+          $style: normal,
+          $align: center
+        );
+        line-height: 25px;
+      }
+    }
+    .our-val-bg-img-box-one::after{
+      content: "";
+      width: 96px;
+      height: 96px;
+      background: url("../images/png/about-our-bg-img-one-after-img.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -50px;
+    }
+  }
+}

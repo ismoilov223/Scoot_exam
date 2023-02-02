@@ -25,6 +25,7 @@
 @import './assets/scss/layout/menu';
 @import './assets/scss/layout/tables';
 @import './assets/scss/layout/signup';
+@import './assets/scss/layout/hero-bg';
 
 // Components (alphabetical order)
 @import './assets/scss/components/buttons';
@@ -35,9 +36,9 @@
 @import './assets/scss/vendors-extensions/example-library';
 
 // Pages (alphabetical order)
-@import './assets/scss/pages/contact';
+@import './assets/scss/pages/about';
 @import './assets/scss/pages/home';
-@import './assets/scss/pages/user-profile';
+@import './assets/scss/pages/location';
 
 // Themes (alphabetical order)
 /* space-mono-regular - latin */

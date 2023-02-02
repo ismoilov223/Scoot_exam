@@ -1,0 +1,24 @@
+.about-hero-bg-box {
+  margin-top: 96px;
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/png/about-hero-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  //   padding-left: 165px;
+  .about-hero {
+    width: 100%;
+    .about-hero-title {
+      @include font-style(
+        $family: $first-font,
+        $size: 4.8em,
+        $color: $clr-white,
+        $weight: 700,
+        $style: normal,
+        $align: left
+      );
+    }
+  }
+}

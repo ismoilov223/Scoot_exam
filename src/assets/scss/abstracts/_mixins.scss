@@ -9,3 +9,10 @@
 	font-style: $style;
 	text-align: $align;
 }
+// @mixin media ($code, $status){
+// 	@if $status == table {
+// 		@media (max-width: 768px) {
+// 			$code;
+// 		}
+// 	}
+// }

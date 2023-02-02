@@ -6,6 +6,8 @@
 // }
 .footer {
   background-color: $clr-dark-navy-900;
+  // position: sticky;
+  // bottom: 0;
 //   position: sticky;
 //   z-index: 1;
   bottom: 0;
@@ -28,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 58px;
-    .hed-nav-list {
+    .fot-nav-list {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -52,6 +54,22 @@
         &-link:hover {
           color: $clr-yellow;
         }
+      }
+    }
+  }
+}
+@media (max-width:375px){
+  .bot-nav{
+    display: flex;
+    flex-direction: column;
+    .logo-and-nav-box{
+      display: flex;
+      flex-direction: column;
+      .fot-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 87px;
       }
     }
   }
