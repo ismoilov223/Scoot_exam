@@ -1,1 +1,42 @@
 // Specific style for user profile page
+.main-img-box{
+    padding: 120px 0;
+}
+.location-bottom-box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    .locat-bot-text-box{
+        display: flex;
+        gap: 30px;
+        .locat-title{
+            @include font-style(
+                $family: $first-font,
+                $size: 4.8em,
+                $color: $clr-dark-navy,
+                $weight: 700,
+                $style: normal,
+                $align: left
+              );
+              margin: 0;
+              line-height: 1.1em;
+              display: inline-block;
+              width: 351px;
+        }
+        .local-text-con{
+            width: 445px;
+        }
+        .locat-text{
+            @include font-style(
+                $family: $second-font,
+                $size: 1.5em,
+                $color: $clr-dim-gray,
+                $weight: 400,
+                $style: normal,
+                $align: left
+              );
+              margin: 0;
+              line-height: 1.5em;
+        }
+    }
+}

@@ -51,9 +51,17 @@
   left: -509px;
   z-index: -1;
 }
+.our-values-bg{
+  .about-prmary-rounded{
+    position: absolute;
+    left: -325px;
+    top: -15px;
+  }
+}
 .our-values-max {
   text-align: center;
   // padding-top: 78px;
+  padding-top: 120px;
   padding-bottom: 60px;
   .our-values-title {
     @include font-style(
@@ -78,6 +86,7 @@
       border-radius: 50%;
       margin-left: auto;
       margin-right: auto;
+      position: relative !important;
     }
     .our-val-bg-img-box-one {
       background-image: url("../images/png/about-our-bg-img-one.png");
@@ -94,7 +103,6 @@
       flex-direction: column;
       justify-content: center;
       gap: 87px;
-      position: relative;
       .our-value-card-title{
         @include font-style(
           $family: $first-font,
@@ -118,6 +126,16 @@
         line-height: 25px;
       }
     }
+    // .our-val-bg-img-box-one::before{
+    //   content: "";
+    //   width: 445px;
+    //   height: 445px;
+    //   background: url("../images/svg/primary-rounded.png");
+    //   background-repeat: no-repeat;
+    //   position: absolute;
+    //   // bottom: -66px;
+    //   // left: 68px;
+    // }
     .our-val-bg-img-box-one::after{
       content: "";
       width: 96px;
@@ -125,7 +143,122 @@
       background: url("../images/png/about-our-bg-img-one-after-img.png");
       background-repeat: no-repeat;
       position: absolute;
-      bottom: -50px;
+      bottom: -66px;
+      left: 68px;
+    }
+    .our-val-bg-img-box-two::after{
+      content: "";
+      width: 96px;
+      height: 96px;
+      background: url("../images/png/about-our-bg-img-two-after-img.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -66px;
+      left: 68px;
+    }
+    .our-val-bg-img-box-three::after{
+      content: "";
+      width: 96px;
+      height: 96px;
+      background: url("../images/png/about-our-bg-img-three-after-img.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      bottom: -66px;
+      left: 68px;
+    }
+  }
+}
+.faq-max{
+  padding-bottom: 160px;
+  .faq-title{
+    @include font-style(
+      $family: $second-font,
+      $size: 4.8em,
+      $color: $clr-dark-navy,
+      $weight: 700,
+      $style: normal,
+      $align: center
+    );
+    line-height: 4.8em;
+  }
+  .faq-row{
+    width: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: baseline;
+    gap: 30px;
+    .faq-row-title-box{
+      width: 30%;
+      text-align: center;
+      .faq-row-title{
+        @include font-style(
+          $family: $first-font,
+          $size: 4.0em,
+          $color: $clr-dark-navy,
+          $weight: 700,
+          $style: normal,
+          $align: center
+        );
+        line-height: 4.8em;
+        margin: 0;
+      }
+    }
+    .faq-row-dropdown-box{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .faq-dropdown-box{
+        padding: 32px 40px;
+        background-color: $clr-snow;
+        .faq-dropdawn-title{
+          @include font-style(
+            $family: $first-font,
+            $size: 2.4em,
+            $color: $clr-dark-navy,
+            $weight: 700,
+            $style: normal,
+            $align: left
+          );
+          line-height: 2.8em;
+          margin: 0;
+        }
+        .faq-dropdawn-text{
+          @include font-style(
+            $family: $second-font,
+            $size: 1.5em,
+            $color: $clr-dark-navy,
+            $weight: 400,
+            $style: normal,
+            $align: left
+          );
+          line-height: 1.5em;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+@media (max-width:786px){
+  .ourval-card-row{
+    display: flex;
+    justify-content: center;
+  }
+  .faq-title{
+    line-height: 0px !important;
+    margin-bottom: 1.5em;
+  }
+  .faq-row-title{
+    line-height: 3.2em !important;
+  }
+  .faq-row{
+    display: flex;
+    flex-direction: column;
+    .faq-row-title-box{
+      width: 100% !important;
+    }
+    .faq-row-dropdown-box{
+      width: 100% !important;
     }
   }
 }

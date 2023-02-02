@@ -22,3 +22,28 @@
     }
   }
 }
+.careers-hero-bg {
+  background-image: url("../images/png/careers-hero-bg-img.png") !important;
+}
+@media (max-width: 768px) {
+  .careers-hero-bg {
+    background-image: url("../images/png/careers-hero-bg-img-tablet.png") !important;
+  } 
+  .about-hero-bg-box {
+    background-image: url("../images/png/about-hero-bg-img-tablet.png") !important;
+  } 
+  .location-hero-bg {
+    background-image: url("../images/png/location-hero-bg-img-tablet.png") !important;
+  } 
+}
+@media (max-width: 375px) {
+  .careers-hero-bg {
+    background-image: url("../images/png/careers-hero-bg-img-mobile.png") !important;
+  } 
+  .about-hero-bg-box {
+    background-image: url("../images/png/about-hero-bg-img-mobile.png") !important;
+  } 
+  .location-hero-bg {
+    background-image: url("../images/png/location-hero-bg-img-mobile.png") !important;
+  } 
+}
