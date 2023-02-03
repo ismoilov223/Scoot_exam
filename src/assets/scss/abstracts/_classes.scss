@@ -17,3 +17,28 @@
 .clr-dim-gray{
 	color: $clr-dim-gray;
 }
+@media (max-width:950px){
+	.max-wdth{
+		max-width: 920px !important;
+	}
+}
+@media (max-width:640px){
+	.max-wdth{
+		max-width: 590px !important;
+	}
+}
+@media (max-width:600px){
+	.max-wdth{
+		max-width: 570px !important;
+	}
+}
+@media (max-width:550px){
+	.max-wdth{
+		max-width: 510px !important;
+	}
+}
+@media (max-width:500px){
+	.max-wdth{
+		max-width: 470px !important;
+	}
+}

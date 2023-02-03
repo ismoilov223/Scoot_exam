@@ -38,6 +38,14 @@
     }
   }
 }
+@media (max-width:640px){
+    .hed-nav{
+      display: none;
+    }
+    .hed-nav-list{
+      display: none;
+    }
+}
 @media (max-width:375px){
     .hed-nav{
       display: none;

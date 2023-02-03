@@ -86,3 +86,21 @@
     }
   }
 }
+@media (max-width: 470px) {
+  .sign-up-max {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    .sign-up-box-left {
+      width: 90%;
+      &-title {
+        text-align: center;
+      }
+    }
+    .sign-up-box-right {
+      width: 90%;
+      justify-content: center;
+    }
+  }
+}

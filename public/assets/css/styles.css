@@ -18,6 +18,31 @@
   color: #939CAA;
 }
 
+@media (max-width: 950px) {
+  .max-wdth {
+    max-width: 920px !important;
+  }
+}
+@media (max-width: 640px) {
+  .max-wdth {
+    max-width: 590px !important;
+  }
+}
+@media (max-width: 600px) {
+  .max-wdth {
+    max-width: 570px !important;
+  }
+}
+@media (max-width: 550px) {
+  .max-wdth {
+    max-width: 510px !important;
+  }
+}
+@media (max-width: 500px) {
+  .max-wdth {
+    max-width: 470px !important;
+  }
+}
 .rotate-me {
   animation: rotating 1s linear infinite;
 }
@@ -99,7 +124,7 @@ body {
   color: #FCB72B;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 570px) {
   .bot-nav {
     display: flex;
     flex-direction: column;
@@ -152,6 +177,14 @@ body {
   color: #FCB72B;
 }
 
+@media (max-width: 640px) {
+  .hed-nav {
+    display: none;
+  }
+  .hed-nav-list {
+    display: none;
+  }
+}
 @media (max-width: 375px) {
   .hed-nav {
     display: none;
@@ -242,6 +275,24 @@ body {
   }
   .sign-up-max .sign-up-box-left-title {
     text-align: center;
+  }
+}
+@media (max-width: 470px) {
+  .sign-up-max {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+  .sign-up-max .sign-up-box-left {
+    width: 90%;
+  }
+  .sign-up-max .sign-up-box-left-title {
+    text-align: center;
+  }
+  .sign-up-max .sign-up-box-right {
+    width: 90%;
+    justify-content: center;
   }
 }
 .about-hero-bg-box {
@@ -576,6 +627,11 @@ body {
   }
   .faq-row .faq-row-dropdown-box {
     width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .about-prmary-rounded {
+    display: none;
   }
 }
 .hero {
