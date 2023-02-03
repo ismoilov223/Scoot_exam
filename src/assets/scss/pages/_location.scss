@@ -1,42 +1,171 @@
 // Specific style for user profile page
-.main-img-box{
-    padding: 120px 0;
+.main-bg-map {
+  padding: 120px 0;
+  .main-img-box {
+    width: 100%;
+    padding: 281px 0;
+    background-image: url("../images/png/location-main-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-.location-bottom-box{
+// .main-img {
+//   padding-top: 120px;
+// }
+.location-bottom-box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+  align-items: center;
+  .locat-bot-text-box {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 120px;
-    .locat-bot-text-box{
-        display: flex;
-        gap: 30px;
-        .locat-title{
-            @include font-style(
-                $family: $first-font,
-                $size: 4.8em,
-                $color: $clr-dark-navy,
-                $weight: 700,
-                $style: normal,
-                $align: left
-              );
-              margin: 0;
-              line-height: 1.1em;
-              display: inline-block;
-              width: 351px;
-        }
-        .local-text-con{
-            width: 445px;
-        }
-        .locat-text{
-            @include font-style(
-                $family: $second-font,
-                $size: 1.5em,
-                $color: $clr-dim-gray,
-                $weight: 400,
-                $style: normal,
-                $align: left
-              );
-              margin: 0;
-              line-height: 1.5em;
-        }
+    gap: 30px;
+    .locat-title {
+      @include font-style(
+        $family: $first-font,
+        $size: 4.8em,
+        $color: $clr-dark-navy,
+        $weight: 700,
+        $style: normal,
+        $align: left
+      );
+      margin: 0;
+      line-height: 1.1em;
+      display: inline-block;
+      width: 351px;
     }
+    .local-text-con {
+      width: 445px;
+    }
+    .locat-text {
+      @include font-style(
+        $family: $second-font,
+        $size: 1.5em,
+        $color: $clr-dim-gray,
+        $weight: 400,
+        $style: normal,
+        $align: left
+      );
+      margin: 0;
+      line-height: 1.5em;
+    }
+  }
+  .messeg-us {
+    width: 180px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+.map-text {
+  //   width: 311px !important;
+  display: none;
+  padding: 0 32px;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 72px;
+  .map-box-row {
+    width: 100%;
+    padding: 22px 0;
+    background-color: #fcb72b26;
+    text-align: center;
+    .map-tex {
+      @include font-style(
+        $family: $first-font,
+        $size: 2.4em,
+        $color: $clr-dark-navy,
+        $weight: 700,
+        $style: normal,
+        $align: center
+      );
+      margin: 0;
+      line-height: 2.8em;
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .location-bottom-box {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media (max-width: 830px) {
+  .max-wdth {
+    max-width: 750px !important;
+  }
+  .location-bottom-box {
+    .locat-bot-text-box {
+      .local-text-con {
+        width: 100%;
+      }
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  .main-img-box {
+    background-image: url("../images/png/location-main-img-tablet.png");
+    padding: 180px 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .locat-title{
+    width: 70% !important;
+    text-align: center !important;
+  }
+  .local-text-con{
+    width: 80% !important;
+    text-align: center !important;
+    .locat-text{
+        text-align: center !important;
+
+    }
+  }
+}
+@media (max-width: 730px) {
+  .main-img-box {
+    padding: 150px 0 !important;
+  }
+}
+@media (max-width: 610px) {
+  .main-img-box {
+    padding: 130px 0 !important;
+  }
+}
+@media (max-width: 530px) {
+  .main-img-box {
+    padding: 110px 0 !important;
+  }
+  .local-text-con {
+    width: 80% !important;
+  }
+}
+@media (max-width: 460px) {
+  .main-img-box {
+    background-image: url("../images/png/location-main-img-mobile.png") !important;
+    padding: 110px 0 !important;
+  }
+}
+@media (max-width: 420px) {
+  .main-img-box {
+    background-image: url("../images/png/location-main-img-mobile.png") !important;
+    padding: 90px 0 !important;
+  }
+  .map-text{
+    display: flex !important;
+  }
+}
+@media (max-width: 380px) {
+  .main-img-box {
+    padding: 90px 0 !important;
+  }
+  .locat-title {
+    text-align: center !important;
+    font-size: 3.2em !important;
+  }
 }
